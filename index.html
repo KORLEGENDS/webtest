@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 개인 소개 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>학생 개인 소개</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>개인 소개</h2>
+            <p><strong>이름과 학과:</strong> <span id="student-name-and-major">[이름과 학과]</span></p>
+            <button onclick="editSection('student-name-and-major')">수정</button>
+            <p><strong>학문적 관심사:</strong> <span id="academic-interests">[학문적 관심사]</span></p>
+            <button onclick="editSection('academic-interests')">수정</button>
+        </section>
+        <section id="education-and-research">
+            <h2>학습 및 연구 경험</h2>
+            <p><strong>과정 및 프로젝트:</strong> <span id="courses-and-projects">[과정 및 프로젝트]</span></p>
+            <button onclick="editSection('courses-and-projects')">수정</button>
+            <p><strong>연구 활동:</strong> <span id="research-activities">[연구 활동]</span></p>
+            <button onclick="editSection('research-activities')">수정</button>
+        </section>
+        <section id="skills">
+            <h2>기술 및 능력</h2>
+            <p><strong>기술 스킬:</strong> <span id="technical-skills">[기술 스킬]</span></p>
+            <button onclick="editSection('technical-skills')">수정</button>
+            <p><strong>언어 능력:</strong> <span id="language-skills">[언어 능력]</span></p>
+            <button onclick="editSection('language-skills')">수정</button>
+        </section>
+        <!-- 추가 섹션 구현 -->
+    </main>
+    <footer>
+        <p>Contact: <a href="mailto:student@example.com">student@example.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
